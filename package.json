@@ -1,0 +1,83 @@
+{
+  "name": "testbed-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "eb-unix": "electron-builder -m",
+    "eb-linux": "electron-builder -l",
+    "eb-windows": "electron-builder -w",
+    "build": "export $(cat .env | xargs) && electron-builder -wl -p always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvdicarlo/testbed-electron.git"
+  },
+  "author": "Michael DiCarlo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvdicarlo/testbed-electron/issues"
+  },
+  "homepage": "https://github.com/mvdicarlo/testbed-electron#readme",
+  "build": {
+    "appId": "com.lemonynade.testbed-electron",
+    "productName": "TestbedElectron",
+    "publish": {
+      "provider": "github",
+      "owner": "mvdicarlo",
+      "repo": "testbed-electron"
+    },
+    "directories": {
+      "buildResources": "build",
+      "output": "electron-dist"
+    },
+    "mac": {
+      "category": "public.app-category.productivity",
+      "icon": "icons/icon.icns",
+      "gatekeeperAssess": false,
+      "target": [
+        "dmg"
+      ]
+    },
+    "linux": {
+      "artifactName": "${productName}-${version}.${ext}",
+      "icon": "icons/icon_256x256x32.png",
+      "category": "Network",
+      "target": [
+        "AppImage"
+      ]
+    },
+    "appImage": {
+      "systemIntegration": "doNotAsk"
+    },
+    "win": {
+      "publisherName": [
+        "Michael DiCarlo"
+      ],
+      "icon": "icons/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-log": "^3.0.7",
+    "electron-updater": "^4.1.2"
+  },
+  "devDependencies": {
+    "electron": "^4.2.10",
+    "electron-builder": "^20.44.4"
+  }
+}
