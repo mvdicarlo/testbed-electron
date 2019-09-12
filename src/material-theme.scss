@@ -1,0 +1,111 @@
+@import '~@angular/material/theming';
+
+$mat-dark-theme-background: (
+  status-bar: black,
+  app-bar: map_get($mat-grey, 900),
+  background: #202225,
+  hover: rgba(white, 0.04), // TODO(kara): check style with Material Design UX
+  card: map_get($mat-grey, 900),
+  table: map_get($mat-grey, 900),
+  dialog: #3a3a3a,
+  disabled-button: rgba(white, 0.12),
+  raised-button: map-get($mat-grey, 800),
+  focused-button: $light-focused,
+  selected-button: map_get($mat-grey, 900),
+  selected-disabled-button: map_get($mat-grey, 800),
+  disabled-button-toggle: black,
+  unselected-chip: map_get($mat-grey, 700),
+  disabled-list-option: black,
+);
+
+$custom-typography: mat-typography-config($font-family: 'Roboto, "Helvetica Neue", sans-serif;');
+
+@include mat-core($custom-typography);
+$primary: mat-palette($mat-blue, 800);
+$accent: mat-palette($mat-light-blue, 600, 100, 800);
+$warn: mat-palette($mat-red, 600);
+$theme: mat-dark-theme($primary, $accent, $warn);
+@include angular-material-theme($theme); // Material Icons
+
+// Need to overwrite bootstrap _reboot.scss
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+code {
+  font-family: Roboto !important;
+}
+
+.warn-text {
+  color: mat-color($warn);
+}
+
+.accent-text {
+  color: mat-color($accent);
+}
+
+.bordered:not(.clear-border) {
+  background: linear-gradient(to right, mat-color($accent) 1px, transparent 1px) 0 0, linear-gradient(to right, mat-color($accent) 1px, transparent 1px) 0 100%, linear-gradient(to left, mat-color($accent) 1px, transparent 1px) 100% 0, linear-gradient(to left, mat-color($accent) 1px, transparent 1px) 100% 100%, linear-gradient(to bottom, mat-color($accent) 1px, transparent 1px) 0 0, linear-gradient(to bottom, mat-color($accent) 1px, transparent 1px) 100% 0, linear-gradient(to top, mat-color($accent) 1px, transparent 1px) 0 100%, linear-gradient(to top, mat-color($accent) 1px, transparent 1px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 8px 10px;
+  border-radius: 0 !important;
+}
+
+.bordered:hover:not(.clear-border) {
+  background: linear-gradient(to right, mat-color($accent, 800) 1px, transparent 1px) 0 0, linear-gradient(to right, mat-color($accent, 800) 1px, transparent 1px) 0 100%, linear-gradient(to left, mat-color($accent, 800) 1px, transparent 1px) 100% 0, linear-gradient(to left, mat-color($accent, 800) 1px, transparent 1px) 100% 100%, linear-gradient(to bottom, mat-color($accent, 800) 1px, transparent 1px) 0 0, linear-gradient(to bottom, mat-color($accent, 800) 1px, transparent 1px) 100% 0, linear-gradient(to top, mat-color($accent, 800) 1px, transparent 1px) 0 100%, linear-gradient(to top, mat-color($accent, 800) 1px, transparent 1px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 8px 10px;
+  border-radius: 0 !important;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+/* Customize Material CSS */
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  border-radius: 0 !important;
+}
+
+.mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+  vertical-align: bottom;
+}
+
+.mat-tab-link {
+  min-width: 50px !important;
+  padding: 0 12px !important;
+}
+
+.mat-tab-nav-bar {
+  overflow-x: auto !important;
+  background-color: mat-color($accent);
+}
+
+.transparent-dialog mat-dialog-container {
+  background: rgba(0,0,0,0.9) !important;
+  box-shadow: unset;
+  padding: 0;
+}
+
+.mat-dialog-container {
+  min-width: 33vw;
+}
+
+mat-radio-button + mat-radio-button {
+  margin-left: 4px;
+}
+
+.mat-badge-small .mat-badge-content {
+  font-size: 8px !important;
+}

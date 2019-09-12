@@ -1,0 +1,1079 @@
+PostyBirb Translation Guide
+
+Each text translation that occurs in PostyBirb is in this file.
+Please put the relevant translation in the translation field. (Internal field should be ignored)
+Please specify the language it is being translated to.
+
+LANGUAGE: <Language being translated to>
+TRANSLATOR: <Person to be credited>
+
+PLEASE UNDERSTAND WHAT THE FIELDS MEAN
+
+Internal: Just ignore this field. I use this for mapping it to the final translation file.
+Context: Just some context for translators since some people have been confused about the purpose/context of the text. You do not need to translate this field.
+Translate Me: The text you are translating.
+Translated: The actual translation of Translate Me.
+
+DO NOT TRANSLATE TEXT IN BRACKETS SUCH AS {{website}} or {{value}}
+-----------------------------------------------------------------------
+
+{
+  "Internal": "Additional Files",
+  "Context": "Header for a section where users add additional files to a submission form",
+  "Translate Me": "Additional Files",
+  "Translated": ""
+}
+
+{
+  "Internal": "Adult",
+  "Context": "A submission rating. Meaning explicit content or something you wouldn't consider SFW",
+  "Translate Me": "Adult",
+  "Translated": ""
+}
+
+{
+  "Internal": "Adult Themes",
+  "Translate Me": "Adult Themes",
+  "Translated": ""
+}
+
+{
+  "Internal": "All Ages",
+  "Context": "Safe for all ages (found in Pixiv additional options)",
+  "Translate Me": "All Ages",
+  "Translated": ""
+}
+
+{
+  "Internal": "Allow Commercial Uses",
+  "Translate Me": "Allow Commercial Uses",
+  "Translated": ""
+}
+
+{
+  "Internal": "Allow Community Tags",
+  "Context": "A checkbox option (Pixiv)",
+  "Translate Me": "Allow Community Tags",
+  "Translated": ""
+}
+
+{
+  "Internal": "Allow Modifications",
+  "Translate Me": "Allow Modifications",
+  "Translated": ""
+}
+
+{
+  "Internal": "Apply Group",
+  "Translate Me": "Apply Group",
+  "Translated": ""
+}
+
+{
+  "Internal": "Authentication Failed",
+  "Context": "Message shown when unable to authenticate a website",
+  "Translate Me": "Authentication Failed",
+  "Translated": ""
+}
+
+{
+  "Internal": "Authorize",
+  "Translate Me": "Authorize",
+  "Translated": ""
+}
+
+{
+  "Internal": "Block Guests",
+  "Context": "A checkbox option (Inkbunny)",
+  "Translate Me": "Block Guests",
+  "Translated": ""
+}
+
+{
+  "Internal": "Blog",
+  "Translate Me": "Blog",
+  "Translated": ""
+}
+
+{
+  "Internal": "Bulk",
+  "Context": "A mode indicator for editing forms in bulk, rather than single (subject to change in the future)",
+  "Translate Me": "Bulk",
+  "Translated": ""
+}
+
+{
+  "Internal": "Website Agreement",
+  "Translate Me": "By using PostyBirb you agree to the Terms of Service and Rules of the websites that you are posting to. You are responsible for everything you post.",
+  "Translated": ""
+}
+
+{
+  "Internal": "Cancel",
+  "Translate Me": "Cancel",
+  "Translated": ""
+}
+
+{
+  "Internal": "Cancel All",
+  "Translate Me": "Cancel All",
+  "Translated": ""
+}
+
+{
+  "Internal": "Category",
+  "Context": "Header for website options that can be put into categories (e.g. FurAffinity)",
+  "Translate Me": "Category",
+  "Translated": ""
+}
+
+{
+  "Internal": "Change File",
+  "Translate Me": "Change File",
+  "Translated": ""
+}
+
+{
+  "Internal": "Changelog",
+  "Translate Me": "Changelog",
+  "Translated": ""
+}
+
+{
+  "Internal": "Charge Patrons",
+  "Context": "A checkbox option for Patreon (whether to charge patrons or not)",
+  "Translate Me": "Charge Patrons",
+  "Translated": ""
+}
+
+{
+  "Internal": "Clear",
+  "Context": "Clear form",
+  "Translate Me": "Clear",
+  "Translated": ""
+}
+
+{
+  "Internal": "Clear Submission Data",
+  "Translate Me": "Clear Submission Data",
+  "Translated": ""
+}
+
+{
+  "Internal": "Close",
+  "Translate Me": "Close",
+  "Translated": ""
+}
+
+{
+  "Internal": "Code",
+  "Translate Me": "Code",
+  "Translated": ""
+}
+
+{
+  "Internal": "Combine With Default",
+  "Translate Me": "Combine With Default",
+  "Translated": ""
+}
+
+{
+  "Internal": "Comment Permissions",
+  "Translate Me": "Comment Permissions",
+  "Translated": ""
+}
+
+{
+  "Internal": "Content",
+  "Translate Me": "Content",
+  "Translated": ""
+}
+
+{
+  "Internal": "Copy",
+  "Translate Me": "Copy",
+  "Translated": ""
+}
+
+{
+  "Internal": "Copy Submission",
+  "Translate Me": "Copy Submission",
+  "Translated": ""
+}
+
+{
+  "Internal": "Critique",
+  "Context": "A checkbox for website options",
+  "Translate Me": "Critique",
+  "Translated": ""
+}
+
+{
+  "Internal": "Website Options Tooltip",
+  "Translate Me": "Customize website specific options and overwrite default tags and descriptions",
+  "Translated": ""
+}
+
+{
+  "Internal": "Data",
+  "Translate Me": "Data",
+  "Translated": ""
+}
+
+{
+  "Internal": "Default Description",
+  "Context": "Generic description used by all websites unless changed elsewhere",
+  "Translate Me": "Default Description",
+  "Translated": ""
+}
+
+{
+  "Internal": "Default Tags",
+  "Context": "Generic tags used by all websites unless changes elsewhere",
+  "Translate Me": "Default Tags",
+  "Translated": ""
+}
+
+{
+  "Internal": "Delete",
+  "Translate Me": "Delete",
+  "Translated": ""
+}
+
+{
+  "Internal": "Description",
+  "Translate Me": "Description",
+  "Translated": ""
+}
+
+{
+  "Internal": "Description Template",
+  "Translate Me": "Description Template",
+  "Translated": ""
+}
+
+{
+  "Internal": "Disable Comments",
+  "Translate Me": "Disable Comments",
+  "Translated": ""
+}
+
+{
+  "Internal": "Draft",
+  "Translate Me": "Draft",
+  "Translated": ""
+}
+
+{
+  "Internal": "Duplicate",
+  "Translate Me": "Duplicate",
+  "Translated": ""
+}
+
+{
+  "Internal": "Edit",
+  "Translate Me": "Edit",
+  "Translated": ""
+}
+
+{
+  "Internal": "Empty",
+  "Translate Me": "Empty",
+  "Translated": ""
+}
+
+{
+  "Internal": "Empty Queue When A Post Fails",
+  "Translate Me": "Empty Queue When A Post Fails",
+  "Translated": ""
+}
+
+{
+  "Internal": "Everyone",
+  "Translate Me": "Everyone",
+  "Translated": ""
+}
+
+{
+  "Internal": "Explicit Text",
+  "Translate Me": "Explicit Text",
+  "Translated": ""
+}
+
+{
+  "Internal": "Extreme",
+  "Context": "A submission rating. Refers to adult and anything that could be considered offensive",
+  "Translate Me": "Extreme",
+  "Translated": ""
+}
+
+{
+  "Internal": "Failed",
+  "Translate Me": "Failed",
+  "Translated": ""
+}
+
+{
+  "Internal": "Feature",
+  "Translate Me": "Feature",
+  "Translated": ""
+}
+
+{
+  "Internal": "Filter",
+  "Translate Me": "Filter",
+  "Translated": ""
+}
+
+{
+  "Internal": "Folder",
+  "Translate Me": "Folder",
+  "Translated": ""
+}
+
+{
+  "Internal": "Friends Only",
+  "Context": "A checkbox option (Inkbunny)",
+  "Translate Me": "Friends Only",
+  "Translated": ""
+}
+
+{
+  "Internal": "From Clipboard",
+  "Translate Me": "From Clipboard",
+  "Translated": ""
+}
+
+{
+  "Internal": "Gender",
+  "Context": "FurAffinity Option",
+  "Translate Me": "Gender",
+  "Translated": ""
+}
+
+{
+  "Internal": "General",
+  "Context": "A submission rating. Refers to anything SFW.",
+  "Translate Me": "General",
+  "Translated": ""
+}
+
+{
+  "Internal": "Gore/Violence",
+  "Context": "Pixiv category option",
+  "Translate Me": "Gore/Violence",
+  "Translated": ""
+}
+
+{
+  "Internal": "Group Only",
+  "Context": "SoFurry option",
+  "Translate Me": "Group Only",
+  "Translated": ""
+}
+
+{
+  "Internal": "Help Advertise PostyBirb",
+  "Translate Me": "Help Advertise PostyBirb",
+  "Translated": ""
+}
+
+{
+  "Internal": "Help Translate",
+  "Context": "Help Translate",
+  "Translate Me": "Help Translate",
+  "Translated": ""
+}
+
+{
+  "Internal": "Hidden",
+  "Context": "SoFurry option",
+  "Translate Me": "Hidden",
+  "Translated": ""
+}
+
+{
+  "Internal": "Hide Queue",
+  "Translate Me": "Hide Queue",
+  "Translated": ""
+}
+
+{
+  "Internal": "Ignore Thumbnail For Websites",
+  "Translate Me": "Ignore Thumbnail For Websites",
+  "Translated": ""
+}
+
+{
+  "Internal": "Ignored tag",
+  "Translate Me": "Ignored duplicate tag: {{tag}}",
+  "Translated": ""
+}
+
+{
+  "Internal": "Import from existing Template",
+  "Translate Me": "Import from existing Template",
+  "Translated": ""
+}
+
+{
+  "Internal": "In minutes",
+  "Context": "Denotes that the form field is counted in minutes (1 = 1 minute)",
+  "Translate Me": "In minutes",
+  "Translated": ""
+}
+
+{
+  "Internal": "Incomplete submission",
+  "Translate Me": "Incomplete submission",
+  "Translated": ""
+}
+
+{
+  "Internal": "Journal/Status",
+  "Translate Me": "Journal/Status",
+  "Translated": ""
+}
+
+{
+  "Internal": "License",
+  "Translate Me": "License",
+  "Translated": ""
+}
+
+{
+  "Internal": "Load Template",
+  "Translate Me": "Load Template",
+  "Translated": ""
+}
+
+{
+  "Internal": "Logged In",
+  "Translate Me": "Logged In",
+  "Translated": ""
+}
+
+{
+  "Internal": "Login",
+  "Translate Me": "Login",
+  "Translated": ""
+}
+
+{
+  "Internal": "Login Profile",
+  "Translate Me": "Login Profile",
+  "Translated": ""
+}
+
+{
+  "Internal": "Logout",
+  "Translate Me": "Logout",
+  "Translated": ""
+}
+
+{
+  "Internal": "Logs",
+  "Translate Me": "Logs",
+  "Translated": ""
+}
+
+{
+  "Internal": "Lots",
+  "Translate Me": "Lots",
+  "Translated": ""
+}
+
+{
+  "Internal": "Make Default",
+  "Translate Me": "Make Default",
+  "Translated": ""
+}
+
+{
+  "Internal": "Manage",
+  "Translate Me": "Manage",
+  "Translated": ""
+}
+
+{
+  "Internal": "Manage Tag Groups",
+  "Translate Me": "Manage Tag Groups",
+  "Translated": ""
+}
+
+{
+  "Internal": "Manage Templates",
+  "Translate Me": "Manage Templates",
+  "Translated": ""
+}
+
+{
+  "Internal": "Mature",
+  "Context": "A submission rating. Refers to things not quite SFW, but not necessarily explicit in nature.",
+  "Translate Me": "Mature",
+  "Translated": ""
+}
+
+{
+  "Internal": "Mature Category",
+  "Context": "A website option header",
+  "Translate Me": "Mature Category",
+  "Translated": ""
+}
+
+{
+  "Internal": "Mature Content",
+  "Context": "A website option header",
+  "Translate Me": "Mature Content",
+  "Translated": ""
+}
+
+{
+  "Internal": "Media",
+  "Translate Me": "Media",
+  "Translated": ""
+}
+
+{
+  "Internal": "Minimum Pledge",
+  "Translate Me": "Minimum Pledge",
+  "Translated": ""
+}
+
+{
+  "Internal": "Minors",
+  "Context": "Rating option for Pixiv",
+  "Translate Me": "Minors",
+  "Translated": ""
+}
+
+{
+  "Internal": "More",
+  "Translate Me": "More",
+  "Translated": ""
+}
+
+{
+  "Internal": "Must select a login profile",
+  "Translate Me": "Must select a login profile",
+  "Translated": ""
+}
+
+{
+  "Internal": "New",
+  "Translate Me": "New",
+  "Translated": ""
+}
+
+{
+  "Internal": "New Profile",
+  "Translate Me": "New Profile",
+  "Translated": ""
+}
+
+{
+  "Internal": "No",
+  "Translate Me": "No",
+  "Translated": ""
+}
+
+{
+  "Internal": "No Free Download",
+  "Context": "DeviantArt option",
+  "Translate Me": "No Free Download",
+  "Translated": ""
+}
+
+{
+  "Internal": "No login found",
+  "Translate Me": "No login found",
+  "Translated": ""
+}
+
+{
+  "Internal": "No websites selected",
+  "Translate Me": "No websites selected",
+  "Translated": ""
+}
+
+{
+  "Internal": "None",
+  "Translate Me": "None",
+  "Translated": ""
+}
+
+{
+  "Internal": "Not Logged In",
+  "Translate Me": "Not Logged In",
+  "Translated": ""
+}
+
+{
+  "Internal": "Split Additional File Info",
+  "Translate Me": "Not all websites support additional files. This will split this submission into new submissions for the below websites.",
+  "Translated": ""
+}
+
+{
+  "Internal": "Notify",
+  "Context": "Common website option. Whether or not to notify watchers (DA, IB, Weasyl)",
+  "Translate Me": "Notify",
+  "Translated": ""
+}
+
+{
+  "Internal": "Nudity",
+  "Translate Me": "Nudity",
+  "Translated": ""
+}
+
+{
+  "Internal": "Original Work",
+  "Context": "Website option",
+  "Translate Me": "Original Work",
+  "Translated": ""
+}
+
+{
+  "Internal": "Overwrite Default",
+  "Context": "A checkbox option for tags",
+  "Translate Me": "Overwrite Default",
+  "Translated": ""
+}
+
+{
+  "Internal": "Password",
+  "Translate Me": "Password",
+  "Translated": ""
+}
+
+{
+  "Internal": "Patrons Only",
+  "Translate Me": "Patrons Only",
+  "Translated": ""
+}
+
+{
+  "Internal": "Performance",
+  "Translate Me": "Performance",
+  "Translated": ""
+}
+
+{
+  "Internal": "Post",
+  "Context": "Post/Send/Upload submission",
+  "Translate Me": "Post",
+  "Translated": ""
+}
+
+{
+  "Internal": "Profanity",
+  "Translate Me": "Profanity",
+  "Translated": ""
+}
+
+{
+  "Internal": "Profile",
+  "Translate Me": "Profile",
+  "Translated": ""
+}
+
+{
+  "Internal": "Public",
+  "Context": "Website option",
+  "Translate Me": "Public",
+  "Translated": ""
+}
+
+{
+  "Internal": "Queue",
+  "Translate Me": "Queue",
+  "Translated": ""
+}
+
+{
+  "Internal": "Racism",
+  "Translate Me": "Racism",
+  "Translated": ""
+}
+
+{
+  "Internal": "Rating",
+  "Context": "Content rating of submission",
+  "Translate Me": "Rating",
+  "Translated": ""
+}
+
+{
+  "Internal": "Rating missing",
+  "Translate Me": "Rating missing",
+  "Translated": ""
+}
+
+{
+  "Internal": "Recent",
+  "Translate Me": "Recent",
+  "Translated": ""
+}
+
+{
+  "Internal": "Reference",
+  "Translate Me": "Reference",
+  "Translated": ""
+}
+
+{
+  "Internal": "Rename",
+  "Translate Me": "Rename",
+  "Translated": ""
+}
+
+{
+  "Internal": "Reorder",
+  "Translate Me": "Reorder",
+  "Translated": ""
+}
+
+{
+  "Internal": "Requires",
+  "Translate Me": "Requires",
+  "Translated": ""
+}
+
+{
+  "Internal": "Reset",
+  "Translate Me": "Reset",
+  "Translated": ""
+}
+
+{
+  "Internal": "Reset Cookies",
+  "Translate Me": "Reset Cookies",
+  "Translated": ""
+}
+
+{
+  "Internal": "Reupload better quality image",
+  "Translate Me": "Reupload better quality image",
+  "Translated": ""
+}
+
+{
+  "Internal": "Save",
+  "Context": "Save/store submission for posting",
+  "Translate Me": "Save",
+  "Translated": ""
+}
+
+{
+  "Internal": "Save To Template",
+  "Translate Me": "Save To Template",
+  "Translated": ""
+}
+
+{
+  "Internal": "Schedule",
+  "Context": "Button text to schedule a submission to post at a certain time",
+  "Translate Me": "Schedule",
+  "Translated": ""
+}
+
+{
+  "Internal": "Scraps",
+  "Translate Me": "Scraps",
+  "Translated": ""
+}
+
+{
+  "Internal": "Select All",
+  "Translate Me": "Select All",
+  "Translated": ""
+}
+
+{
+  "Internal": "Select a Login Profile",
+  "Translate Me": "Select a Login Profile",
+  "Translated": ""
+}
+
+{
+  "Internal": "Separate with commas",
+  "Translate Me": "Separate with commas",
+  "Translated": ""
+}
+
+{
+  "Internal": "Settings",
+  "Translate Me": "Settings",
+  "Translated": ""
+}
+
+{
+  "Internal": "Sexual Content",
+  "Context": "A checkbox for Pixiv (maybe DA) options that spedcifies if the content has sexual content",
+  "Translate Me": "Sexual Content",
+  "Translated": ""
+}
+
+{
+  "Internal": "Shortcuts",
+  "Context": "Text for a button that shows description help and shortcuts",
+  "Translate Me": "Shortcuts",
+  "Translated": ""
+}
+
+{
+  "Internal": "Show Queue",
+  "Translate Me": "Show Queue",
+  "Translated": ""
+}
+
+{
+  "Internal": "Sketch",
+  "Translate Me": "Sketch",
+  "Translated": ""
+}
+
+{
+  "Internal": "Some",
+  "Translate Me": "Some",
+  "Translated": ""
+}
+
+{
+  "Internal": "Source URL",
+  "Context": "e621 website option",
+  "Translate Me": "Source URL",
+  "Translated": ""
+}
+
+{
+  "Internal": "Species",
+  "Context": "FurAffinity species category option",
+  "Translate Me": "Species",
+  "Translated": ""
+}
+
+{
+  "Internal": "Split Additional Files Into New Submissions",
+  "Translate Me": "Split Additional Files Into New Submissions",
+  "Translated": ""
+}
+
+{
+  "Internal": "Spoiler Warning",
+  "Translate Me": "Spoiler Warning",
+  "Translated": ""
+}
+
+{
+  "Internal": "Status",
+  "Context": "FurryNetwork website option to denote status of submission",
+  "Translate Me": "Status",
+  "Translated": ""
+}
+
+{
+  "Internal": "Submission",
+  "Translate Me": "Submission",
+  "Translated": ""
+}
+
+{
+  "Internal": "Submit",
+  "Translate Me": "Submit",
+  "Translated": ""
+}
+
+{
+  "Internal": "Success",
+  "Translate Me": "Success",
+  "Translated": ""
+}
+
+{
+  "Internal": "Tagging Permissions",
+  "Translate Me": "Tagging Permissions",
+  "Translated": ""
+}
+
+{
+  "Internal": "Tags",
+  "Context": "Section header for Tag section",
+  "Translate Me": "Tags",
+  "Translated": ""
+}
+
+{
+  "Internal": "Default Tag Tooltip",
+  "Translate Me": "Tags that will be sent to all websites unless overwritten",
+  "Translated": ""
+}
+
+{
+  "Internal": "Template",
+  "Translate Me": "Template",
+  "Translated": ""
+}
+
+{
+  "Internal": "Templates",
+  "Translate Me": "Templates",
+  "Translated": ""
+}
+
+{
+  "Internal": "Terms of Use",
+  "Translate Me": "Terms of Use",
+  "Translated": ""
+}
+
+{
+  "Internal": "Theme",
+  "Context": "Generic website option",
+  "Translate Me": "Theme",
+  "Translated": ""
+}
+
+{
+  "Internal": "Default Description Tooltip",
+  "Translate Me": "This description will be used for all websites unless overwritten",
+  "Translated": ""
+}
+
+{
+  "Internal": "Thumbnail",
+  "Translate Me": "Thumbnail",
+  "Translated": ""
+}
+
+{
+  "Internal": "Time Between Posts",
+  "Translate Me": "Time Between Posts",
+  "Translated": ""
+}
+
+{
+  "Internal": "Time Taken",
+  "Translate Me": "Time Taken",
+  "Translated": ""
+}
+
+{
+  "Internal": "Title",
+  "Context": "Title of a submission",
+  "Translate Me": "Title",
+  "Translated": ""
+}
+
+{
+  "Internal": "Unauthorize",
+  "Context": "To revoke access to an authorized website (essentially to logout)",
+  "Translate Me": "Unauthorize",
+  "Translated": ""
+}
+
+{
+  "Internal": "Unlisted",
+  "Context": "FurryNetwork (maybe SoFurry) visibility option",
+  "Translate Me": "Unlisted",
+  "Translated": ""
+}
+
+{
+  "Internal": "Additional Files Help",
+  "Translate Me": "Upload additional files with this submission",
+  "Translated": ""
+}
+
+{
+  "Internal": "Use Title",
+  "Context": "Tumblr website option to display the title",
+  "Translate Me": "Use Title",
+  "Translated": ""
+}
+
+{
+  "Internal": "Use a Creative Commons license",
+  "Translate Me": "Use a Creative Commons license",
+  "Translated": ""
+}
+
+{
+  "Internal": "Username",
+  "Translate Me": "Username",
+  "Translated": ""
+}
+
+{
+  "Internal": "View",
+  "Translate Me": "View",
+  "Translated": ""
+}
+
+{
+  "Internal": "Viewing Permissions",
+  "Translate Me": "Viewing Permissions",
+  "Translated": ""
+}
+
+{
+  "Internal": "Viewing Restrictions",
+  "Translate Me": "Viewing Restrictions",
+  "Translated": ""
+}
+
+{
+  "Internal": "Violence",
+  "Translate Me": "Violence",
+  "Translated": ""
+}
+
+{
+  "Internal": "Website Options",
+  "Translate Me": "Website Options",
+  "Translated": ""
+}
+
+{
+  "Internal": "Websites",
+  "Translate Me": "Websites",
+  "Translated": ""
+}
+
+{
+  "Internal": "Yes",
+  "Translate Me": "Yes",
+  "Translated": ""
+}
+
+{
+  "Internal": "Does not support file format",
+  "Translate Me": "{{website}} does not support file format: {{value}}",
+  "Translated": ""
+}
+
+{
+  "Internal": "Max file size",
+  "Translate Me": "{{website}} does not support files larger than {{value}}",
+  "Translated": ""
+}
+
+{
+  "Internal": "Does not support rating",
+  "Translate Me": "{{website}} does not support rating: {{value}}",
+  "Translated": ""
+}
+
+{
+  "Internal": "Options are incomplete",
+  "Translate Me": "{{website}} options are incomplete",
+  "Translated": ""
+}
+
+{
+  "Internal": "Requires minimum tags",
+  "Translate Me": "{{website}} requires at least {{value}} tags",
+  "Translated": ""
+}
+

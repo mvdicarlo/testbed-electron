@@ -1,83 +1,77 @@
 {
-  "name": "testbed-electron",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "name": "postybirb",
+  "version": "2.2.35",
   "scripts": {
-    "start": "electron main.js",
-    "eb-unix": "electron-builder -m",
-    "eb-linux": "electron-builder -l",
-    "eb-windows": "electron-builder -w",
-    "build": "export $(cat .env | xargs) && electron-builder -wl -p always"
+    "ng": "ng",
+    "compile": "ng build --vendor-chunk=false",
+    "build": "ng build --vendor-chunk=false --aot",
+    "prod": "ng build --c=production",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mvdicarlo/testbed-electron.git"
-  },
-  "author": "Michael DiCarlo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mvdicarlo/testbed-electron/issues"
-  },
-  "homepage": "https://github.com/mvdicarlo/testbed-electron#readme",
-  "build": {
-    "appId": "com.lemonynade.testbed-electron",
-    "productName": "TestbedElectron",
-    "publish": {
-      "provider": "github",
-      "owner": "mvdicarlo",
-      "repo": "testbed-electron"
-    },
-    "directories": {
-      "buildResources": "build",
-      "output": "electron-dist"
-    },
-    "mac": {
-      "category": "public.app-category.productivity",
-      "icon": "icons/icon.icns",
-      "gatekeeperAssess": false,
-      "target": [
-        "dmg"
-      ]
-    },
-    "linux": {
-      "artifactName": "${productName}-${version}.${ext}",
-      "icon": "icons/icon_256x256x32.png",
-      "category": "Network",
-      "target": [
-        "AppImage"
-      ]
-    },
-    "appImage": {
-      "systemIntegration": "doNotAsk"
-    },
-    "win": {
-      "publisherName": [
-        "Michael DiCarlo"
-      ],
-      "icon": "icons/icon.ico",
-      "target": [
-        {
-          "target": "nsis",
-          "arch": [
-            "x64"
-          ]
-        },
-        {
-          "target": "portable",
-          "arch": [
-            "x64"
-          ]
-        }
-      ]
-    }
-  },
+  "private": true,
   "dependencies": {
-    "electron-log": "^3.0.7",
-    "electron-updater": "^4.1.2"
+    "@angular/animations": "^7.2.15",
+    "@angular/cdk": "^7.3.7",
+    "@angular/common": "~7.2.15",
+    "@angular/compiler": "~7.2.15",
+    "@angular/core": "~7.2.15",
+    "@angular/forms": "~7.2.15",
+    "@angular/material": "^7.3.7",
+    "@angular/platform-browser": "~7.2.15",
+    "@angular/platform-browser-dynamic": "~7.2.15",
+    "@angular/router": "~7.2.15",
+    "@fortawesome/fontawesome-free": "^5.6.3",
+    "@ngx-translate/core": "^11.0.1",
+    "@ngx-translate/http-loader": "^4.0.0",
+    "@tinymce/tinymce-angular": "^2.5.0",
+    "angular2-hotkeys": "^2.1.4",
+    "bootstrap-css-only": "^4.2.1",
+    "core-js": "^2.5.4",
+    "dot-prop": "^4.2.0",
+    "file-saver": "^2.0.1",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.3.1",
+    "jsstore": "^2.9.5",
+    "nanoid": "^2.0.1",
+    "ng-pick-datetime": "^7.0.0",
+    "ng-snotify": "^4.3.1",
+    "ngx-image-cropper": "^1.3.8",
+    "roboto-fontface": "^0.10.0",
+    "rxjs": "~6.5.2",
+    "store": "^2.0.12",
+    "tslib": "^1.9.0",
+    "turndown": "^5.0.3",
+    "zone.js": "~0.8.29"
   },
   "devDependencies": {
-    "electron": "^4.2.10",
-    "electron-builder": "^20.44.4"
+    "@angular-devkit/build-angular": "~0.13.9",
+    "@angular/cli": "~7.3.9",
+    "@angular/compiler-cli": "~7.2.15",
+    "@angular/language-service": "~7.2.15",
+    "@types/dot-prop": "^4.2.0",
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "angular-builder-custom-terser-options": "^1.0.1",
+    "babel-eslint": "^7.2.3",
+    "codelyzer": "~4.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~3.1.1",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~1.1.2",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.11.0",
+    "typescript": "~3.2.4"
   }
 }

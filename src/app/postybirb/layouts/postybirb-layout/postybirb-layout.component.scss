@@ -1,0 +1,114 @@
+.pb-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 48px auto;
+
+  .actions-bar {
+    display: grid;
+    grid-template-columns: 200px auto 1fr 200px;
+
+    button {
+      border-radius: 0 !important;
+      height: 48px;
+    }
+  }
+
+  .pb-areas {
+    display: grid;
+    grid-template-columns: 200px auto;
+
+    & > div {
+      height: calc(100vh - 36px - 48px);
+    }
+  }
+}
+
+.container {
+  min-height: 100%;
+  background: #2e3036;
+}
+
+.pb-sidebar {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 200px;
+
+  .submission-nav {
+    z-index: 100;
+  }
+
+  .actions {
+    button {
+      border-radius: 0 !important;
+      height: 48px;
+    }
+
+    .submission-actions button {
+      width: 50%;
+    }
+  }
+}
+
+.pb-queue-section {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  width: 200px;
+
+  button {
+    border-radius: 0 !important;
+    height: 48px;
+  }
+}
+
+.router-scroller {
+  overflow: auto;
+  position: relative;
+}
+
+.scroll-top-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 0px !important;
+
+  button {
+    opacity: 0.9;
+    outline: none;
+  }
+}
+
+.search-input {
+  max-width: 200px;
+  font-size: 12px;
+  margin-bottom: -15px;
+}
+
+.submission-tab {
+  min-width: 120px !important;
+
+  submission-tab {
+    width: 120px;
+  }
+}
+
+.cancel-all-btn {
+  cursor: pointer;
+}
+
+cdk-virtual-scroll-viewport {
+  height: 100%;
+}
+
+td {
+  padding: 0.25em !important;
+  width: 200px;
+}
+
+thead tr {
+  font-size: 12px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,63 @@
+<loading-overlay [loading]="loading || (submission && (submission.queued || submission.isScheduled))" [mode]="submission && submission.isScheduled ? 'determinate' : 'buffer'" [allowStop]="submission && (submission.queued || submission.isScheduled)" [faStopIcon]="submission && submission.isScheduled ? 'far fa-calendar-times mt-2' : null" (stop)="stopPosting()">
+  <div loading-body *ngIf="submission && submission.isScheduled">
+    <i class="far fa-clock"></i>
+    <span> {{ submission.schedule | date:'short' }}</span>
+  </div>
+
+  <div class="submission-info-container d-flex">
+    <div class="img mr-1" *ngIf="!hideForReload" (click)="fileChange.click()">
+      <img *ngIf="submission.submissionType === 'SUBMISSION' && submission.fileMap" [src]="submission.id | thumbnail: 'PRIMARY' | async | objectURL | safe" [alt]="submission.fileInfo.name" [title]="submission.fileInfo.name">
+      <mat-icon *ngIf="submission.submissionType === 'JOURNAL'">comment</mat-icon>
+      <i *ngIf="submission.submissionType === 'SUBMISSION' && submission.fileInfo.type.includes('image')" class="fas fa-search-plus preview pl-1 pb-1" (click)="openPreview($event)"></i>
+    </div>
+    <form [formGroup]="form" class="submission-controls">
+      <input formControlName="title" maxlength="50" [placeholder]="'Title' | translate" class="w-100 submission-input">
+      <input formControlName="schedule" [placeholder]="'Schedule' | translate" class="w-100 submission-input" [owlDateTime]="dtPicker" [owlDateTimeTrigger]="dtPicker">
+      <owl-date-time #dtPicker></owl-date-time>
+      <mat-select formControlName="rating" [placeholder]="'Rating' | translate" required>
+        <mat-option value="General">{{ 'General' | translate }}</mat-option>
+        <mat-option value="Mature">{{ 'Mature' | translate }}</mat-option>
+        <mat-option value="Adult">{{ 'Adult' | translate }}</mat-option>
+        <mat-option value="Extreme">{{ 'Extreme' | translate }}</mat-option>
+      </mat-select>
+    </form>
+  </div>
+  <div class="control-btns row no-gutters">
+    <div class="col" style="min-width: 50px">
+      <button class="btn btn-sm bordered" [class.btn-link]="!editing" [class.btn-secondary]="editing" [class.clear-border]="editing" [matTooltip]="'Edit' | translate" (click)="toggleEditing()">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn-sm btn-link bordered" [matTooltip]="submission.schedule ? 'Schedule' : 'Post' | translate" [disabled]="submission.problems.length > 0" (click)="enablePosting()">
+        <mat-icon *ngIf="!submission.schedule">send</mat-icon>
+        <mat-icon *ngIf="submission.schedule">timer</mat-icon>
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn-sm btn-link bordered" [matMenuTriggerFor]="additionalMenu" [matTooltip]="'More' | translate">
+        <mat-icon>expand_more</mat-icon>
+      </button>
+    </div>
+    <div class="col" *ngIf="hasAdditionalFiles()">
+      <button class="btn btn-sm btn-link bordered" (click)="splitSubmission()" [matTooltip]="'Split Additional Files Into New Submissions' | translate">
+        <mat-icon>call_split</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <mat-menu #additionalMenu="matMenu">
+    <ng-template matMenuContent>
+      <button mat-menu-item (click)="fileChange.click()" *ngIf="submission.submissionType === 'SUBMISSION'">{{ 'Change File' | translate }}</button>
+      <button mat-menu-item (click)="openCopySubmission()">{{ 'Copy Submission' | translate }}</button>
+      <button mat-menu-item (click)="loadTemplate()">{{ 'Load Template' | translate }}</button>
+      <button mat-menu-item (click)="duplicateSubmission()">{{ 'Duplicate' | translate }}</button>
+      <button mat-menu-item class="warn-text" (click)="deleteSubmission()">{{ 'Delete' | translate }}</button>
+    </ng-template>
+  </mat-menu>
+  <input #fileChange type="file" class="d-none" (change)="changeFile($event)" single>
+
+  <div *ngIf="submission.problems && submission.problems.length" class="problem-indicator">
+    <div [matBadge]="submission.problems.length" matBadgeColor="warn" matBadgePosition="before" [matBadgeHidden]="!submission.problems || !submission.problems.length" matBadgeSize="small"></div>
+  </div>
+</loading-overlay>

@@ -1,0 +1,21 @@
+mat-checkbox {
+  font-size: .8rem;
+}
+
+.description-buttons button {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.description-container {
+  position: relative;
+}
+
+.description-container span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  color: black;
+  font-size: 14px;
+}

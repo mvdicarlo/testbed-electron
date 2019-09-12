@@ -1,0 +1,50 @@
+<loading-overlay [loading]="loading">
+  <div *ngIf="logs.length" class="row no-gutters">
+    <div class="col-12 log" *ngFor="let log of logs; let i = index">
+      <div class="p-2">
+        <div><strong>{{ log.submission.title }}</strong> - <span class="text-uppercase" [class.warn-text]="!log.success" [class.text-success]="log.success">{{ (log.success ? 'Success' : 'Failed') | translate }}</span></div>
+        <div>
+          <i class="far fa-clock mr-1"></i><span>{{ log.created | date:'medium' }}</span>
+        </div>
+        <div class="row no-gutters mt-2">
+          <div class="col">
+            <strong>{{ 'Websites' | translate }}</strong>
+            <div class="w-100 d-flex website-status">
+              <div *ngIf="log.post.success.length">
+                <div>Successful</div>
+                <ul class="text-success">
+                  <li *ngFor="let success of log.post.success">{{ success }}</li>
+                </ul>
+              </div>
+
+              <div *ngIf="log.post.fail.length">
+                <div>Failed</div>
+                <ul class="text-danger">
+                  <li *ngFor="let fail of log.post.fail">{{ fail }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6" *ngIf="log.post.sourceURLs.length">
+            <strong>{{ 'Website URLs' | translate }}</strong>
+            <div class="w-100 source-urls">
+              <span *ngFor="let src of log.post.sourceURLs" class="text-info mb-1"> {{ src }}</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2">
+          <button mat-icon-button color="accent" (click)="save(log)" [matTooltip]="'Save' | translate">
+            <mat-icon>save</mat-icon>
+          </button>
+          <button mat-icon-button color="accent" (click)="revive(log)" [matTooltip]="'Revive' | translate">
+            <mat-icon>repeat</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!logs.length">
+    No logs founds.
+  </div>
+</loading-overlay>

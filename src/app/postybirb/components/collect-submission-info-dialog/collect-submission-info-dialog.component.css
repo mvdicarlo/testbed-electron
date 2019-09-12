@@ -1,0 +1,42 @@
+mat-icon {
+  cursor: pointer;
+}
+
+button {
+  border-radius: 0 !important;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  max-width: 100px;
+  word-break: break-word;
+  font-size: 9px;
+}
+
+form + form {
+  margin-top: .25em;
+}
+
+mat-radio-button + mat-radio-button {
+  margin-left: 4px;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.no-button,
+.yes-button {
+  width: 50%;
+}
+
+.data-section {
+  font-size: 12px;
+}
+
+.resize mat-form-field {
+  width: 75px;
+}

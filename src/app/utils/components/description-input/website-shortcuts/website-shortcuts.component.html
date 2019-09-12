@@ -1,0 +1,28 @@
+<div class="d-flex">
+  <div name="help_button" style="flex: 1" class="mr-1">
+    <button type="button" class="help-btn" matInput mat-flat-button color="accent" (click)="toggleHelp()">{{'Shortcuts' | translate}}</button>
+  </div>
+  <div *ngIf="!toggle" style="flex: 10">
+    <div>
+      <div>
+        <strong>Linking Usernames</strong>
+        <br>
+        <code>
+          <em>: + website code + username + :</em>
+        </code>
+        <br>
+        <code>
+          <em>Example: :falemonynade:</em>
+        </code>
+        <div>
+          <strong>Website Codes</strong>
+          <code>
+            <ul style="column-count: 3; list-style: none;">
+              <li *ngFor="let obj of codes">{{obj.name}}<span class="text-info">[{{obj.code}}]</span></li>
+            </ul>
+          </code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

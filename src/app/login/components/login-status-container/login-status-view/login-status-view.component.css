@@ -1,0 +1,14 @@
+.logo {
+  flex: 10;
+  font-weight: bold;
+  margin: auto;
+}
+
+tr {
+  cursor: pointer;
+}
+
+.table-container {
+  max-height: 100px;
+  overflow: overlay;
+}

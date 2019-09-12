@@ -1,0 +1,15 @@
+.tag-actions {
+  padding-bottom: 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.tag-actions i,
+.tag-actions mat-icon {
+  cursor: pointer;
+}
+
+mat-checkbox {
+  font-size: .8rem;
+}
